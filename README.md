@@ -1,4 +1,4 @@
-A new background has been # partthree
+A new background has been  partthree
 upgraded with a background image, as well the the navigation buttons are now styled with curved corners
 big improvements have been done to the product page where the user can now add their desired products to cart and they can continue to purchase their products
 after adding the items to cart they can click the cart icon to check the due amount of their products
@@ -10,3 +10,7 @@ customer service and trading hours has beeen added to so the user can now seee t
 Now the footer contains social icons so the user can also find more relent stuff on their platforms 
 new color grading on each page has been updated to match the aesthetics of the clothes 
 on the contact page the user can locate our store by clicking a highlight link below the locate us header, and it will lead the user to google maps
+
+
+a new for emquiry has been updated where the user can enter their details and write a message to us.
+a sitemap file and robots.txt files has also been updated which enhances the performance of the website
