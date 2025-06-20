@@ -12,5 +12,5 @@ new color grading on each page has been updated to match the aesthetics of the c
 on the contact page the user can locate our store by clicking a highlight link below the locate us header, and it will lead the user to google maps
 
 
-a new for emquiry has been updated where the user can enter their details and write a message to us.
-a sitemap file and robots.txt files has also been updated which enhances the performance of the website
+a new page for enquiry has been updated where the user can enter their details and write a message to us.
+a sitemap.xml file and robots.txt file, has also been updated which enhances the performance of the website.
