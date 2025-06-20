@@ -1,120 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.3">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.3" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Murto - Contact Us</title>
-  <meta name="description" content="Contact details for Roar - 57 Moyglare Abbey, Dublin, w23c1k2. Phone +353 5465481">
+  <meta name="description" content="Contact details for Roar - 57 Moyglare Abbey, Dublin, w23c1k2. Phone +353 5465481" />
   <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     .mm {
       text-align: center;
     }
-    .image-container {
-      text-align: left;
-    }
-    .image-container img {
-      width: 10%;
-      overflow: hidden;
-      display: inline-block;
-    }
-    .content-box {
-      background-color: rgb(211, 232, 232);
-      color: rgb(0, 0, 0);
-      border-radius: 36px;
-      margin: 15px;
-      padding: 15px;
-    }
-    .contact-container {
-      align-items: center;
-      display: flex;
-      height: 100vh;
-      justify-content: space-evenly;
-    }
     .contact-left {
       display: flex;
       flex-direction: column;
-      align-items: start;
       gap: 20px;
-    }
-    .contact-left-title h2 {
-      font-weight: 600px;
-      color: rgb(18, 18, 20);
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-    .contact-left-title hr {
-      border: none;
-      width: 120px;
-      height: 5px;
-      background-color: #aeb0b0;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      margin-left: 0px;
     }
     .contact-inputs {
       width: 500px;
       height: 50px;
+      padding-left: 25px;
+      border-radius: 50px;
       border: none;
       outline: none;
-      padding-left: 25px;
-      font-weight: 50px;
-      color: rgb(0, 0, 0);
-      border-radius: 50px;
       background-color: rgb(211, 232, 232);
     }
     .contact-left textarea {
       height: 140px;
-      padding-top: 15px;
+      padding: 15px;
       border-radius: 20px;
     }
-    .contact-inputs:focus {
-      border: 2px solid red;
+    .contact-left-title h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #d1dbdb;
     }
-    .contact-left button {
-      display: flex;
-      align-items: center;
-      padding: 15px 30px;
-      font-size: 16px;
-      color: rgb(151, 157, 164);
-      gap: 10px;
+    .contact-left-title hr {
+      width: 100px;
+      height: 5px;
+      background-color: #ccc;
+      border-radius: 20px;
       border: none;
-      border-radius: 50px;
-      background-color: rgb(211, 232, 232);
-      cursor: pointer;
-    }
-    .contact-right {
-      text-align: right;
-    }
-    @media(max-width:800px) {
-      .contact-inputs {
-        width: 80vw;
-      }
-      .contact-right {
-        display: none;
-      }
-    }
-    .h2 {
-      font-family: monospace;
-    }
-    .ww {
-      color: green;
-      border-radius: 20px;
     }
     .error-message {
       font-size: 14px;
       color: red;
       margin-top: -10px;
       margin-bottom: 10px;
-      display: block;
+    }
+    @media (max-width: 800px) {
+      .contact-inputs {
+        width: 80vw;
+      }
     }
   </style>
 </head>
 <body>
-
-  <div class="header-container">
+     <div class="header-container">
     <header>
       <div class="logo">
         <a href="index.html"><img src="IMAGES/20220612_180323.png" alt="" style="width: 200px;"></a>
@@ -144,43 +87,36 @@
   <br><hr>
 
   <div class="contant-container">
-    <form id="contactForm" onsubmit="return validateForm()" class="contact-left">
+    <form id="contactForm" class="contact-left">
       <div class="contact-left-title">
         <h2 style="color: #d1dbdb;">Enquiry</h2>
         <hr>
       </div>
-      <input type="hidden" name="access_key" value="1c5af6c0-de8c-44bd-9bce-69c0356cb348">
 
-      <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs">
+      <input type="hidden" name="access_key" value="1c5af6c0-de8c-44bd-9bce-69c0356cb348" />
+
+      <input type="text" id="name" name="name" placeholder="Name" class="contact-inputs" />
       <span id="nameError" class="error-message"></span>
 
-      <input type="text" id="surname" name="Surname" placeholder="Surname" class="contact-inputs">
+      <input type="text" id="surname" name="Surname" placeholder="Surname" class="contact-inputs" />
       <span id="surnameError" class="error-message"></span>
 
-      <input type="text" id="cell" name="Cell number" placeholder="Cell number" class="contact-inputs">
+      <input type="text" id="cell" name="Cell number" placeholder="Cell number" class="contact-inputs" />
       <span id="cellError" class="error-message"></span>
 
-      <input type="text" id="email" name="Email" placeholder="Email" class="contact-inputs">
+      <input type="text" id="email" name="Email" placeholder="Email" class="contact-inputs" />
       <span id="emailError" class="error-message"></span>
 
       <textarea id="message" name="message" placeholder="Message" class="contact-inputs"></textarea>
       <span id="messageError" class="error-message"></span>
 
-      <button type="reset" style="width: 100px; border-radius: 30px; height: 50px; background-color:red; font-size: medium;">Reset</button>
+      <button type="reset" style="width: 100px; border-radius: 30px; height: 50px; background-color: red; font-size: medium;">Reset</button>
       <button type="submit" style="width: 100px; border-radius: 30px; height: 50px; background-color: rgb(37, 252, 37); font-size: medium;">Submit</button>
     </form>
   </div>
-
-  <br><br><br>
-  <div class="ww"></div>
-  <br><hr><br>
-
-  <div class="mm">
-    <h4 style="color: #aeb0b0;"><ins>Locate us</ins></h4>
-    <a style="color: #aeb0b0;" href="https://www.google.com/maps/place/flora+park+29+mohlopi+st"><ins>Click this text to find us via google maps</ins></a>
-  </div>
-
-  <footer>
+  <br>
+  <hr>
+<footer>
     <p>67 DANIE JOUBERT ST, MURTO - Copyright 2021©</p>
     <div class="icons" style="margin-top: 10px;">
       <a href="https://facebook.com" target="_blank" style="margin: 0 10px;">
@@ -194,12 +130,36 @@
       </a>
     </div>
   </footer>
-
   <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+      e.preventDefault(); // Stop form from submitting normally
+
+      if (!validateForm()) return;
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+
+        if (response.ok) {
+          alert("✅ Your enquiry has been successfully sent!");
+          form.reset();
+        } else {
+          alert("❌ Something went wrong. Please try again.");
+        }
+      } catch (error) {
+        alert("❌ Failed to send. Please check your internet connection.");
+      }
+    });
+
     function validateForm() {
       let valid = true;
 
-      // Clear previous errors
+      // Clear errors
       document.getElementById("nameError").textContent = "";
       document.getElementById("surnameError").textContent = "";
       document.getElementById("cellError").textContent = "";

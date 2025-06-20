@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://fortune2-5.github.io/partthree/sitemap.xml
